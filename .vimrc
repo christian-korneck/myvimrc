@@ -67,3 +67,13 @@ set omnifunc=syntaxcomplete#Complete
 
 "use Windows clipboard
 set clipboard=unnamed
+
+"preparations for dragvisuals plugin (shift text blocks with SHIFT + Cursor)
+runtime $HOME/myvimrc/plugin/dragvisuals.vim
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')
+vmap  <expr>  <S-UP>     DVB_Drag('up')
+vmap  <expr>  D        DVB_Duplicate()
+set rtp+=$HOME/myvimrc
+
