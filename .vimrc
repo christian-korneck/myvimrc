@@ -77,3 +77,17 @@ vmap  <expr>  <S-UP>     DVB_Drag('up')
 vmap  <expr>  D        DVB_Duplicate()
 set rtp+=$HOME/myvimrc
 
+"stay in visual mode after indenting a block
+vmap <expr> > ShiftAndKeepVisualSelection(">")
+vmap <expr> < ShiftAndKeepVisualSelection("<")
+
+function! ShiftAndKeepVisualSelection(cmd)
+	set nosmartindent
+	if mode() =~ '[Vv]'
+		return a:cmd . ":set smartindent\<CR>gv"
+	else
+		return a:cmd . ":set smartindent\<CR>"
+	endif
+endfunction
+
+
