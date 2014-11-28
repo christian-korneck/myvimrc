@@ -11,7 +11,7 @@
 "#    source $HOME/myvimrc/.vimrc               #
 "#                                              #
 "################################################
-#
+
 
 "once .vimrc is created, syntax highlighting in vim is off. Turning it on explicitly.
 syntax on
