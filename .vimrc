@@ -89,4 +89,6 @@ function! ShiftAndKeepVisualSelection(cmd)
 	endif
 endfunction
 
-
+"insert date/time with F5 (like in notepad)
+:nnoremap <F5> "=strftime("%c")<CR>P
+:inoremap <F5> <C-R>=strftime("%c")<CR>
