@@ -6,7 +6,6 @@
 "#  /\_\\ \___/  \ \_\ \_\ \_\ \_\ \_\\ \____\  #
 "#  \/_/ \/__/    \/_/\/_/\/_/\/_/\/_/ \/____/  #
 "#                                              #
-"#    customized .vimrc file (ck, Sept2014)     #
 "#    include in $HOME/.vimrc with:             #
 "#    source $HOME/myvimrc/.vimrc               #
 "#                                              #
@@ -16,9 +15,9 @@
 syntax on
 
 "mapping CTRL+] and control+T (follow help hyperlink +
-" jump back to last page) to ü and Ü (German keyboard)
-nnoremap ü <C-]>
-nnoremap ü <C-]>
+" jump back to last page) to Ã¼ and Ãœ (German keyboard)
+nnoremap Ã¼ <C-]>
+nnoremap Ã¼ <C-]>
 
 "show linenumber in the right corner
 set ruler
@@ -92,3 +91,4 @@ endfunction
 "insert date/time with F5 (like in notepad)
 :nnoremap <F5> "=strftime("%c")<CR>P
 :inoremap <F5> <C-R>=strftime("%c")<CR>
+
