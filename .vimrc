@@ -94,3 +94,5 @@ endfunction
 
 color desert
 
+"disable mouse
+set mouse=
