@@ -96,3 +96,6 @@ color desert
 
 "disable mouse
 set mouse=
+
+"disable word wrap (for markdown tables, etc)
+set nowrap
